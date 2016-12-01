@@ -1,6 +1,6 @@
 {
     "name"          : "cookies-xtreme",
-    "version"       : "1.0.0",
+    "version"       : "1.0.1",
     "author"        : "Scott Hamper",
     "contributors"  : [
       { "name": "Brian Scaturro" }
@@ -13,7 +13,7 @@
         "type": "git",
         "url": "git://github.com/netrivet/cookies-xtreme.git"
     },
-    "main"          : "./dist/cookies.js",
+    "main"          : "./dist/cookies-xtreme.js",
     "files"         : ["dist/*", "README.md", "UNLICENSE"],
     "scripts": {
       "copy-ts": "cp src/cookies-xtreme.d.ts dist/cookies-xtreme.d.ts",
