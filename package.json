@@ -1,0 +1,24 @@
+{
+    "name"          : "cookies-xtreme",
+    "version"       : "1.0.0",
+    "author"        : "Scott Hamper",
+    "contributors"  : [
+      { "name": "Brian Scaturro" }
+    ],
+    "description"   : "Client-Side Cookie Manipulation API",
+    "homepage"      : "http://github.com/netrivet/cookies-xtreme",
+    "license"       : "Public Domain",
+    "keywords"      : ["cookies", "client", "browser"],
+    "repository"    : {
+        "type": "git",
+        "url": "git://github.com/netrivet/cookies-xtreme.git"
+    },
+    "main"          : "./dist/cookies.js",
+    "files"         : ["dist/*", "README.md", "UNLICENSE"],
+    "scripts": {
+      "copy-ts": "cp src/cookies-xtreme.d.ts dist/cookies-xtreme.d.ts",
+      "copy-src": "cp src/cookies-xtreme.js dist/cookies-xtreme.js",
+      "minify": "uglifyjs -c -m --support-ie8 -o dist/cookies-xtreme.min.js -- src/cookies-xtreme.js",
+      "build": "npm run copy-ts && npm run copy-src && npm run minify"
+    }
+}
