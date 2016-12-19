@@ -27,8 +27,8 @@ The following browsers have passed all of the automated Cookies.js tests:
 
 ## Getting the Library
 #### Direct downloads
-- [v1.0.0 Minified](https://raw.github.com/netrivet/cookies-xtreme/1.0.0/dist/cookies-xtreme.min.js) (~1 KB gzipped)
-- [v1.0.0 Unminified](https://raw.github.com/netrivet/cookies-xtreme/1.0.0/dist/cookies-xtreme.js) (~1.7 KB gzipped)
+- [v1.1.0 Minified](https://raw.github.com/netrivet/cookies-xtreme/1.1.0/dist/cookies-xtreme.min.js) (~1 KB gzipped)
+- [v1.1.0 Unminified](https://raw.github.com/netrivet/cookies-xtreme/1.1.0/dist/cookies-xtreme.js) (~1.7 KB gzipped)
 
 #### Node Package Manager
 `npm install cookies-xtreme`
