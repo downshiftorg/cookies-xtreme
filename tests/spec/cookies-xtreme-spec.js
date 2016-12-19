@@ -213,6 +213,20 @@ describe('UNIT TESTS', function () {
 
           expect(set).toBe('value');
         });
+
+        it('emits a set event with previous value if available', function () {
+          spyOn(Cookies, 'get').andReturn('old');
+          var newVal, oldVal;
+          Cookies.addListener('set.key', function (value, old) {
+            newVal = value;
+            oldVal = old;
+          });
+
+          Cookies.set('key', 'value');
+
+          expect(newVal).toBe('value');
+          expect(oldVal).toBe('old');
+        });
     });
 
     describe('Cookies.expire(key, options)', function () {

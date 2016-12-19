@@ -36,13 +36,15 @@
           delete target.listeners[key];
         },
 
-        emit: function(key, data) {
+        emit: function(key /** ...args **/) {
           if (!target.listeners[key]) {
             return;
           }
 
+          var args = Array.prototype.slice.call(arguments, 1);
+
           target.listeners[key].forEach(function (listener) {
-            listener(data);
+            listener.apply(null, args);
           });
         }
       };
@@ -93,10 +95,11 @@
         Cookies.set = function (key, value, options) {
             options = Cookies._getExtendedOptions(options);
             options.expires = Cookies._getExpiresDate(value === undefined ? -1 : options.expires);
+            var old = Cookies.get(key);
 
             Cookies._document.cookie = Cookies._generateCookieString(key, value, options);
 
-            Cookies.emit('set.' + key, value);
+            Cookies.emit('set.' + key, value, old);
 
             return Cookies;
         };
