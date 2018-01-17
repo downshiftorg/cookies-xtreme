@@ -1,6 +1,6 @@
 /*
  * Cookies.js (XTREME VERSION!!!) - 1.0.0
- * https://github.com/netrivet/cookies-xtreme
+ * https://github.com/downshiftorg/cookies-xtreme
  *
  * This is free and unencumbered software released into the public domain.
  */

@@ -6,12 +6,12 @@
       { "name": "Brian Scaturro" }
     ],
     "description"   : "Client-Side Cookie Manipulation API",
-    "homepage"      : "http://github.com/netrivet/cookies-xtreme",
+    "homepage"      : "http://github.com/downshiftorg/cookies-xtreme",
     "license"       : "Public Domain",
     "keywords"      : ["cookies", "client", "browser"],
     "repository"    : {
         "type": "git",
-        "url": "git://github.com/netrivet/cookies-xtreme.git"
+        "url": "git://github.com/downshiftorg/cookies-xtreme.git"
     },
     "main"          : "./dist/cookies-xtreme.js",
     "files"         : ["dist/*", "README.md", "UNLICENSE"],
